@@ -1,0 +1,52 @@
+
+35 lines
+
+tsx
+
+main.tsx
+13 lines
+
+tsx
+
+tailwind.config.js
+11 lines
+
+js
+
+app.py
+78 lines
+
+py
+
+use all these files and create a requirements.txt file
+
+Based on your Python backend code (app.py), I'll create a requirements.txt file with the necessary dependencies for your authentication system.
+
+
+Requirements.txt
+Code 
+This requirements.txt file includes:
+
+Flask: The web framework your application is built on
+Flask-CORS: For handling Cross-Origin Resource Sharing (CORS) which you're using to allow frontend-backend communication
+Flask-Bcrypt: For password hashing functionality
+Flask-JWT-Extended: For JSON Web Token authentication which you're using for login sessions
+PyMongo: The MongoDB driver for Python to connect to your database
+python-dotenv: Added as a best practice for environment variable management (useful for handling your JWT secret key in production)
+You can install these dependencies with:
+
+pip install -r requirements.txt
+Note that I've included version numbers to ensure compatibility. Your application uses MongoDB as its database, so make sure you have MongoDB installed and running on the default port (27017) for the application to work properly.
+
+
+
+
+
+
+
+flask==2.3.3
+flask-cors==4.0.0
+flask-bcrypt==1.0.1
+flask-jwt-extended==4.5.2
+pymongo==4.5.0
+python-dotenv==1.0.0
